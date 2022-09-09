@@ -27,6 +27,8 @@
 body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans,helvetica,'helvetica neue',sans-serif}body{font-size:1rem;line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}a,a:visited{color:inherit}a:hover,a:visited:hover{color:dodgerblue}a{text-decoration:none;}blockquote{background:#f9f9f9;border-left:5px solid black;font-size:120%;margin:2rem 0;padding:1rem}blockquote p{margin:0}blockquote footer{font-size:80%;margin:1rem 0 0 0}dl dt{margin-bottom:0.5rem}dl dd{font-style:italic;margin-bottom:2rem}code,.highlight{background:#edf2f7;overflow:auto}code{word-break:break-all}code{padding:0.1rem 0.3rem}pre{padding:1em}.date{opacity:0.6}html{box-sizing:border-box;margin:0;padding:0}*,*:before,*:after{box-sizing:inherit}body{background-color:#edf2f7;color:#495057}header,main{margin:0 auto;max-width:50rem}main{background:white;border:2px solid #e9ecef;-webkit-box-shadow:0 0.75rem 1.5rem rgba(18,38,63,0.03);box-shadow:0 0.75rem 1.5rem rgba(18,38,63,0.03);padding:2rem 3rem}ul,ol{padding:0;list-style-position:inside}table{border-collapse:collapse;text-align:left;width:100%}table tr{border-bottom:1px solid black}table td{padding:0.5rem}img{width:100%;margin:0.5rem 0}nav ul{list-style:none !important;padding:0;text-align:right}nav ul li{display:inline-block}nav a,nav a:visited{margin:0.5rem;text-decoration:none;font-size:0.875rem;text-transform:uppercase;color:inherit}footer{margin:1rem 0;text-align:center;color:inherit}
 </style>
 
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/2a19ad17e3.js"></script>
 </head>
 <body> 
 <span class="over"></span>
@@ -45,6 +47,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
 <time class="date" datetime="2014-03-03T00:00:00+00:00">2014 &middot; Front-end development</time>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>
+<form>
+<input type="text" id="filename" autocomplete="off" readonly="" placeholder="Tidak ada file yang diunggah">
+<br />
+<label for="fileInput" class="custom-file-upload">
+<i class="far fa-images"></i>&nbsp; Unggah Gambar
+<input id="fileInput" type="file" multiple required />
+</label>
+</form>
+</p>
 
 <p>
 <button class="button-3" role="button">Button 4</button>
