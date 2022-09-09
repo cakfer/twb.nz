@@ -1,14 +1,7 @@
 // Add your code here
 
-const modal = document.getElementById("modal");
-const btnSkip = document.getElementById("modal-skip");
-
-window.onload = (event) => {
-  setTimeout(() => modal.classList.add("modal-visible"), 1000);
-};
-
-//tap outside overlay or on cancel button to close window
-
-btnSkip.addEventListener("click", () => {
-  modal.classList.remove("modal-visible");
-});
+$(window).on('load', function() { // makes sure the whole site is loaded 
+  $('#status').fadeOut(); // will first fade out the loading animation 
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+  $('body').delay(350).css({'overflow':'visible'});
+})
