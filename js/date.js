@@ -1,4 +1,4 @@
 if (Date.parse(document.lastModified) != 0)
-    document.write('<i>Last modified: '
+    document.write('Diperbarui pada: '
                    + document.lastModified
-                   + '</i></small>');
+                   + '');
