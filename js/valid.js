@@ -10,12 +10,12 @@ function validate(){
   
   var text;
   if(name.length < 5){
-    text = "Please Enter valid Name";
+    text = "Silakan Masukkan Nama yang valid!";
     error_message.innerHTML = text;
     return false;
   }
   if(subject.length < 10){
-    text = "Please Enter Correct Subject";
+    text = "Silakan Masukkan Subjek yang Benar!";
     error_message.innerHTML = text;
     return false;
   }
