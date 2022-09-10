@@ -6,7 +6,7 @@
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #edf2f7;
+  border:2px solid #7FBCD2;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -15,7 +15,7 @@
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid #edf2f7; }
+.feedback-input:focus { border:2px solid #A5F1E9; }
 
 textarea {
   height: 150px;
@@ -26,7 +26,7 @@ textarea {
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background:#edf2f7;
+  background:#7FBCD2;
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -38,4 +38,4 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:blue; }
+[type="submit"]:hover { background:#A5F1E9; }
