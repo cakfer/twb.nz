@@ -30,10 +30,10 @@ function validate(){
     return false;
   }
   if(message.length <= 140){
-    text = "Please Enter More Than 140 Characters";
+    text = "Silakan Masukkan Lebih Dari 140 Karakter!";
     error_message.innerHTML = text;
     return false;
   }
-  alert("Form Submitted Successfully!");
+  alert("Formulir Berhasil Dikirim!");
   return true;
 }
