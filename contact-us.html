@@ -59,19 +59,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
   </div>
   <form name="contact" action="/success" method="POST" data-netlify="true" id="myform" onsubmit = "return validate();">
     <div class="input_field">
-        <input type="text" placeholder="Name" id="name">
+        <input type="text" placeholder="Name" name="name" id="name">
     </div>
     <div class="input_field">
-        <input type="text" placeholder="Subject" id="subject">
+        <input type="text" placeholder="Subject" name="subject" id="subject">
     </div>
     <div class="input_field">
-        <input type="text" placeholder="Phone" id="phone">
+        <input type="text" placeholder="Phone" name="phone" id="phone">
     </div>
     <div class="input_field">
-        <input type="text" placeholder="Email" id="email">
+        <input type="text" placeholder="Email" name="email" id="email">
     </div>
     <div class="input_field">
-        <textarea placeholder="Message" id="message"></textarea>
+        <textarea placeholder="Message" name="message" id="message"></textarea>
     </div>
     <div class="btn">
         <input type="submit">
