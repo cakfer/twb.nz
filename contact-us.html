@@ -51,21 +51,25 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
 <p><i class="fa fa-quote-left"></i>&nbsp; &nbsp; <script src="js/quotes.js"></script> &nbsp; <i class="fa fa-quote-right"></i></p>
 <hr style="height:2px; border:none; margin: 2rem 0; background-color:#e7e9ee;">
 
-  <small id="error_message"></small>
-  <form name="contact" action="/success" method="POST" data-netlify="true" id="myform" onsubmit = "return validate();" class="form">
-  <div class="form-control">
-  <div class="form-control">
-  <label for="username">Username</label>
-  <input type="text" placeholder="Name" name="name" id="name">
-  <small>Error Message</small>
-  </div>
+<small id="error_message"></small>
+<form name="contact" action="/success" method="POST" data-netlify="true" id="myform" onsubmit = "return validate();" class="form">
   
-    <div class="input_field">
-        <input type="text" placeholder="Subject" name="subject" id="subject">
-    </div>
-    <div class="input_field">
-        <input type="text" placeholder="Phone" name="phone" id="phone">
-    </div>
+<div class="form-control">
+<label for="name">Nama</label>
+<input type="text" placeholder="Name" name="name" id="name">
+</div>
+
+<div class="form-control">
+<label for="subject">Username</label>
+<input type="text" placeholder="Subject" name="subject" id="subject">
+</div>
+
+<div class="form-control">
+<label for="phone">Username</label>
+<input type="text" placeholder="Telephone" name="phone" id="phone">
+</div>
+
+    
     <div class="input_field">
         <input type="text" placeholder="Email" name="email" id="email">
     </div>
