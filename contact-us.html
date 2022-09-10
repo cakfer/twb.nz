@@ -46,44 +46,6 @@
                 <div class="error"></div>
             </label>
 
-            <!-- select -->
-            <label class="form-input userRegion" data-validation="required" data-validation-type="select">
-                <span>Регион доставки</span>
-                <select name="userRegion">
-                    <option value="0" selected disabled>Регион доставки товара</option>
-                    <option value="1">Алматы</option>
-                    <option value="2">Актау</option>
-                    <option value="3">Актобе</option>
-                    <option value="4">Москва</option>
-                    <option value="5">Другой</option>
-                </select>
-                <div class="error"></div>
-            </label>
-
-            <!-- radio button -->
-            <label class="userPayment form-input" data-validation="required" data-validation-type="radio"
-                   data-validation-text="Выберите способ оплаты">
-                <span>Способ оплаты</span>
-                <label>
-                    <input class="inline-middle" type="radio" name="userPayment" value="cashbox">
-                    Наличными на кассе
-                </label>
-                <label>
-                    <input class="inline-middle" type="radio" name="userPayment" value="credit">
-                    Кредитной картой
-                </label>
-                <div class="error"></div>
-            </label>
-
-            <!-- captcha -->
-            <label class="form-input userCaptcha" data-validation="required" data-validation-type="text">
-                <span>Код проверки</span>
-                <img src="example/assets/captcha.png">
-                <input type="text" name="captcha" placeholder="Введите код проверки"
-                       data-validation-condition="equal" data-equal="zQSg2">
-                <div class="error"></div>
-            </label>
-
             <!-- text field -->
             <label class="form-input userMessage" data-validation="required" data-validation-type="text">
                 <span>Примечание</span>
