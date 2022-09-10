@@ -24,38 +24,27 @@
 
 <body>
     <div class="form-container">
-        <form name="contact" action="/success" method="POST" data-netlify="true" class="form">
-            <!-- email field -->
-            <label class="form-input userEmail" data-validation="required" data-validation-type="email">
-                <span>E-mail</span>
-                <input type="email" placeholder="Masukan E-mail" name="userEmail">
-                <div class="error"></div>
-            </label>
+        <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 
-            <!-- text field -->
-            <label class="form-input userName" data-validation="required" data-validation-type="text" data-validation-text="Введите корректное имя">
-                <span>Nama</span>
-                <input type="text" placeholder="Masukan nama Anda" name="userName" data-validation-condition="length" data-min-length="2">
-                <div class="error"></div>
-            </label>
-
-            <!-- phone field (not finished yet) -->
-            <label class="form-input userPhone" data-validation="required" data-validation-type="phone">
-                <span>Тelephone</span>
-                <input type="tel" placeholder="Masukan nomor telepone" name="userTel" data-validation-condition="length" data-min-length="10">
-                <div class="error"></div>
-            </label>
-
-            <!-- text field -->
-            <label class="form-input userMessage" data-validation="required" data-validation-type="text">
-                <span>Pesan</span>
-                <textarea placeholder="Tulis sesuatu..." name="userMessage"
-                            data-validation-condition="length" data-min-length="50" data-max-length="200"></textarea>
-                <div class="error"></div>
-            </label>
-
-            <button class="validate-form-button" type="submit">Kirim</button>
-        </form>
     </div>
     <!--Initialize Validator (example)-->
     <script>$('form').validator();</script>
