@@ -52,37 +52,23 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
 <hr style="height:2px; border:none; margin: 2rem 0; background-color:#e7e9ee;">
 
 <div class="small" id="error_message"></div>
-<div class="container">
+
 <form name="contact" action="/success" method="POST" data-netlify="true" id="myform" onsubmit = "return validate();" class="form">
   
-<div class="form-control">
-<label for="name">Nama</label>
-<input type="text" placeholder="Name" name="name" id="name">
-</div>
 
-<div class="form-control">
-<label for="subject">Subject</label>
-<input type="text" placeholder="Subject" name="subject" id="subject">
-</div>
+<input type="text" placeholder="Name" name="name" id="name" class="feedback-input">
 
-<div class="form-control">
-<label for="phone">Telephone</label>
-<input type="text" placeholder="Telephone" name="phone" id="phone">
-</div>
+<input type="text" placeholder="Subject" name="subject" id="subject" class="feedback-input">
 
-<div class="form-control">
-<label for="email">E-mail</label>
-<input type="text" placeholder="e-mail" name="email" id="email">
+<input type="text" placeholder="Telephone" name="phone" id="phone" class="feedback-input">
+
+<input type="text" placeholder="e-mail" name="email" id="email" class="feedback-input">
 </div>
  
-<div class="form-control">
-<label for="message">Pesan</label>
-<textarea placeholder="Message" name="message" id="message"></textarea>
-</div>
+<textarea placeholder="Message" name="message" id="message" class="feedback-input"></textarea>
 
 <button type="submit">Submit</button>
 </form>
-</div>
 
 <hr style="height:2px; border:none; margin: 2rem 0; background-color:#e7e9ee;">
 </article>
