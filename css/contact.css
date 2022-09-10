@@ -23,7 +23,7 @@ input {
   border: 1px solid gainsboro;
 }
 
-.small {
+small {
   color: #e75c3c;
   margin-top: 5px;
   visibility: hidden;
