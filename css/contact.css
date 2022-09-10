@@ -1,5 +1,6 @@
 .container {
   background-color: white;
+  max-width:400px;
   width: 100%;
 }
 
