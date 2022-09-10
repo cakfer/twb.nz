@@ -20,12 +20,12 @@ function validate(){
     return false;
   }
   if(isNaN(phone) || phone.length != 13){
-    text = "Please Enter valid Phone Number";
+    text = "Silakan Masukkan Nomor Telepon yang valid!";
     error_message.innerHTML = text;
     return false;
   }
   if(email.indexOf("@") == -1 || email.length < 6){
-    text = "Please Enter valid Email";
+    text = "Silakan Masukkan Email yang valid!";
     error_message.innerHTML = text;
     return false;
   }
