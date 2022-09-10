@@ -4,4 +4,4 @@
 
 # Demo
 
-[Demo](https://sia.pages.dev/)
+[Demo](https://plaa.netlify.app/)
