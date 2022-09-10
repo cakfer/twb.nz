@@ -53,9 +53,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
 
   <small id="error_message"></small>
   <form name="contact" action="/success" method="POST" data-netlify="true" id="myform" onsubmit = "return validate();" class="form">
-    <div class="input_field">
-        <input type="text" placeholder="Name" name="name" id="name">
-    </div>
+  <div class="form-control">
+  <div class="form-control">
+  <label for="username">Username</label>
+  <input type="text" placeholder="Name" name="name" id="name">
+  <small>Error Message</small>
+  </div>
+  
     <div class="input_field">
         <input type="text" placeholder="Subject" name="subject" id="subject">
     </div>
