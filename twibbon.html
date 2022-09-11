@@ -24,6 +24,7 @@
 <link rel="stylesheet" href="css/buttons.css">
 <link rel="stylesheet" href="css/modals.css">
 <link rel="stylesheet" href="css/info.css">
+<link rel="stylesheet" href="css/contact.css">
 
 <style>img,canvas{width:100%;height:auto;}</style>
 
@@ -57,13 +58,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
 <hr style="height:2px; border:none; margin: 2rem 0; background-color:#e7e9ee;">
 
 <p>Anda dapat mengunggah berbagai ukuran gambar dari hard drive Anda.</p>
-
+Unggah Gambar:
+<br>
 <p>
-<input type="file" accept="image/*" onchange="loadFile(event)" multiple required />
+<input class="feedback-input" type="file" accept="image/*" onchange="loadFile(event)" multiple required />
 </p>
-
+Unggah Bingkai:
+<br>
 <p>
-<input type='file' accept="image/*" onchange="loadTemplate(event)" multiple required />
+<input class="feedback-input" type='file' accept="image/*" onchange="loadTemplate(event)" multiple required />
 </p>
 
 <p>
