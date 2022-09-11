@@ -34,6 +34,6 @@ function validate(){
     error_message.innerHTML = text;
     return false;
   }
-  alert("Formulir Berhasil Dikirim!");
+  alert("Terima kasih atas tanggapan Anda, formulir berhasil dikirim!");
   return true;
 }
