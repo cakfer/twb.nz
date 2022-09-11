@@ -55,6 +55,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
 <hr style="height:2px; border:none; margin: 2rem 0; background-color:#e7e9ee;">
 
 <p>Anda dapat mengunggah berbagai ukuran gambar dari hard drive Anda.</p>
+<!--
 <p>
 <form>
 <input type="text" id="filename" autocomplete="off" readonly="" placeholder="Tidak ada file yang diunggah">
@@ -66,6 +67,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
 </label>
 </form>
 </p>
+-->
+<input type="file" accept="image/*" onchange="loadFile(event)" multiple required hidden="hidden" />
+<!-- <input type="file" id="real-file" hidden="hidden" /> -->
+<button type="button" id="custom-button">CHOOSE A FILE</button>
+<span id="custom-text">No file chosen, yet.</span>
 
 <p>
 <form>
