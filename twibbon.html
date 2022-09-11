@@ -69,7 +69,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
 
 <p>
 <button class="button-3" id="klik" onclick="gen()" role="button"><i class="far fa-eye"></i>&nbsp; PRATINJAU</button>
-<button class="button-4" id="cancel" onclick="location.reload()" role="button"><i class="fas fa-trash-alt"></i>&nbsp; Hapus</button>
 </p>
 
 <br><p><i class="fas fa-share-alt"></i>&nbsp; &nbsp; <a class="post" id="share" href="#">Bagikan ke media sosial</a>.</p>
@@ -90,18 +89,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
 <div class="custom-modal-body">
 <div class="custom-modal-inner">
 <!-- Contetn here -->
-<h2>Well Done! </h2>
+<h4>Well Done! </h4>
 <p>
-<img id="avatar" src="img/preview.jpg"/>
-<img id="bingkai" src="img/twibbon.png" style="display: none"/>
-<canvas id="canvas" style="display: none"></canvas>
+<img id="avatar" style="display: none" src="img/preview.jpg"/>
+<img id="bingkai" style="display: none" src="img/twibbon"/>
+<canvas id="canvas"></canvas>
 </p>
 
 <p>
-<a href="#" id="btndownload" download="twibbon.png" style="display: none" class="button-3" role="button"><i class="fa fa-download"></i>&nbsp; UNDUH</a>
-<button class="button-4" id="cancel" onclick="location.reload()" role="button"><i class="fas fa-trash-alt"></i>&nbsp; HAPUS</button>
+<button class="button-3" id="btndownload">UNDUH</button>
+<button class="button-4" id="cancel" onclick="location.reload()">HAPUS</button> 
 </p>
-
 </div>
 </div>
 </div>
