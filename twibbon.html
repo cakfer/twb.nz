@@ -26,23 +26,28 @@
 <link rel="stylesheet" href="css/info.css">
 
 <style>
-#custom-button {
-  padding: 10px;
-  color: white;
-  background-color: #009578;
-  border: 1px solid #000;
-  border-radius: 5px;
-  cursor: pointer;
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
 }
 
-#custom-button:hover {
-  background-color: #00b28f;
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-#custom-text {
-  margin-left: 10px;
-  font-family: sans-serif;
-  color: #aaa;
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
 </style>
 <style type="text/css"> 
@@ -76,10 +81,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
 
 <p>Anda dapat mengunggah berbagai ukuran gambar dari hard drive Anda.</p>
 
+<div class="upload-btn-wrapper">
+  <button class="btn">Upload a file</button>
 <input type="file" accept="image/*" onchange="loadFile(event)" multiple required hidden="hidden" />
-<!-- <input type="file" id="real-file" hidden="hidden" /> -->
-<button type="button" id="custom-button">CHOOSE A FILE</button>
-<span id="custom-text">No file chosen, yet.</span>
+</div>
 
 <p>
 <form>
