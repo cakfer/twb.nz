@@ -68,7 +68,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
 </p>
 
 <p>
-<button class="button-3" id="klik" onclick="drawImage()" role="button"><i class="far fa-eye"></i>&nbsp; PRATINJAU</button>
+<form>
+<input type="text" id="filename" autocomplete="off" readonly="" placeholder="Tidak ada file yang diunggah">
+<br />
+<label for="fileInput" class="custom-file-upload">
+<i class="far fa-images"></i>&nbsp; Unggah Bingkai
+<input type='file' accept="image/*" onchange="loadTemplate(event)" multiple required />
+<!-- <input id="fileInput" type="file" multiple required /> -->
+</label>
+</form>
+</p>
+
+<p>
+<button class="button-3" id="klik" onclick="gen()" role="button"><i class="far fa-eye"></i>&nbsp; PRATINJAU</button>
 <button class="button-4" id="cancel" onclick="location.reload()" role="button"><i class="fas fa-trash-alt"></i>&nbsp; Hapus</button>
 </p>
 
@@ -109,7 +121,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,Noto Sans
 </div>
 
 <script src="js/modals.js"></script>
-<script src="js/app.js"></script>
+<script src="js/apk.js"></script>
 <script src="js/share.js"></script>
 <script src="js/info.js"></script>
 </body>
