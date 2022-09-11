@@ -108,18 +108,3 @@
 .button-4:-webkit-details-marker {
   display: none;
 }
-
-input[type="file"] {
-    display: none;
-}
-label {
-   color: cornflowerblue;
-}
-label:hover {
-   background-color: yellow;
-}
-#filename{
-  display:inline-block;
-  margin-bottom:10px;
-  border: 0px;
-}
